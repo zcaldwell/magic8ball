@@ -1,8 +1,16 @@
-// import functions and grab DOM elements
+import { answers } from './answers.js';
 
-// initialize global state
+const getRandomNumber = (max)=>{
+  return Math.floor(Math.random() * max);
+};
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+
+const buttonPress = document.getElementById('shake-8ball')
+const answer = document.getElementById('answer');
+
+buttonPress.addEventListener('click', ()=> {
+  const randomAnswer = getRandomNumber(answers.length);
+  return answer.textContent = answers[randomAnswer];
+  
+})
