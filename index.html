@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <main>
         <h1>Ask The Magic 8ball!</h1>
+        <input type="text" id="ask-question">
         <div id="theball">
-            <input type="text" id="ask-question">
+            <div id="blue-area">
+            <p id="8ballanswer" class="hide"></p>
+            </div>
         </div>
             <button id="shake-8ball">Shake!</button>
-            <input type="button" class="button" value="Try Again" onClick="document.location.reload(true)">
-            <p id="answer"></p>
     </main>
     <script type="module" src="./app.js"></script>
 </body>
