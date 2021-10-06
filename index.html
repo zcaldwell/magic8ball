@@ -7,26 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
-    <main>
+    <header>
         <h1>Ask The Magic 8ball!</h1>
-        <input type="text" id="ask-question">
+    </header>
+    <main>
+        <input type="text"  placeholder="Ask the magic 8-ball!" id="ask-question">
         <div id="theball">
             <div id="blue-area">
             <p id="8ballanswer" class="hide"></p>
             </div>
         </div>
+            <audio src="./assets/shaking.wav" id="audio"></audio>
             <button id="shake-8ball">Shake!</button>
     </main>
     <script type="module" src="./app.js"></script>
 </body>
 
 </html>
+
